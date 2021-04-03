@@ -1,0 +1,16 @@
+[
+  {
+    "name": "index.stories",
+    "path": "/index.stories",
+    "component": "/Users/dave/Documents/DEVELOPMENT/GCNM/nuxt-tailwind-storybook/pages/index.stories.js",
+    "chunkName": "pages/index.stories",
+    "_name": "_56e0bb66"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/dave/Documents/DEVELOPMENT/GCNM/nuxt-tailwind-storybook/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_0bab17c6"
+  }
+]

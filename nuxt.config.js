@@ -82,7 +82,7 @@ export default {
   },
 
   storybook: {
-    // stories: ['~/pages/**/*.stories.js'],
+    // stories: ['@/pages/**/*.stories.js'],
   },
 
   apollo: {

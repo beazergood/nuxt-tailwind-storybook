@@ -1,0 +1,8 @@
+query Top100 {
+  topHundreds(sort: "rank") {
+    id
+    name
+    rank
+    description
+  }
+}

@@ -13,6 +13,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 /* Plugins */
 
 import nuxt_plugin_plugin_f24e384c from 'nuxt_plugin_plugin_f24e384c' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_apollomodule_203461bc from 'nuxt_plugin_apollomodule_203461bc' // Source: ./apollo-module.js (mode: 'all')
 import nuxt_plugin_workbox_68653f0c from 'nuxt_plugin_workbox_68653f0c' // Source: ./workbox.js (mode: 'client')
 import nuxt_plugin_metaplugin_81768bc2 from 'nuxt_plugin_metaplugin_81768bc2' // Source: ./pwa/meta.plugin.js (mode: 'all')
 import nuxt_plugin_iconplugin_782740da from 'nuxt_plugin_iconplugin_782740da' // Source: ./pwa/icon.plugin.js (mode: 'all')
@@ -182,6 +183,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_plugin_f24e384c === 'function') {
     await nuxt_plugin_plugin_f24e384c(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_apollomodule_203461bc === 'function') {
+    await nuxt_plugin_apollomodule_203461bc(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_workbox_68653f0c === 'function') {

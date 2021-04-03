@@ -1,0 +1,9 @@
+query CourseBySlug($slug: String) {
+  courses(where: { url_slug: $slug }) {
+    _id
+    name
+    city
+    state
+    url_slug
+  }
+}

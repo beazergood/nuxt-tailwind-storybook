@@ -3,14 +3,18 @@
     "name": "index.stories",
     "path": "/index.stories",
     "component": "/Users/dave/Documents/DEVELOPMENT/GCNM/nuxt-tailwind-storybook/pages/index.stories.js",
-    "chunkName": "pages/index.stories",
-    "_name": "_56e0bb66"
+    "chunkName": "pages/index.stories"
+  },
+  {
+    "name": "top-100",
+    "path": "/top-100",
+    "component": "/Users/dave/Documents/DEVELOPMENT/GCNM/nuxt-tailwind-storybook/pages/top-100.vue",
+    "chunkName": "pages/top-100"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/dave/Documents/DEVELOPMENT/GCNM/nuxt-tailwind-storybook/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_0bab17c6"
+    "chunkName": "pages/index"
   }
 ]

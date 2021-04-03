@@ -1,0 +1,22 @@
+# lat 44.058173, longitude -121.315310 << Bend, OR
+
+# {
+#    loc: {
+#      $near: {
+#        $geometry: {
+#           type: "Point" ,
+#           coordinates: [ -121.315310, 44.058173 ]
+#        },
+#      }
+#    }
+# }
+
+query CourseByState($city: String) {
+  courses(where: { city: $city }) {
+    _id
+    name
+    city
+    state
+    url_slug
+  }
+}

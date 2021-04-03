@@ -200,7 +200,7 @@ export async function setContext (app, context) {
       payload: context.payload,
       error: context.error,
       base: app.router.options.base,
-      env: {}
+      env: {"NUXT_ENV_MAPBOX_ACCESS_TOKEN":"pk.eyJ1IjoiYmVhemVyIiwiYSI6ImNrbWtkeTIzeTEwZGsydnFveHlleXJja3cifQ.k_Cp2PtdyWaiO0ZUHEN7LA"}
     }
     // Only set once
 

@@ -1,4 +1,4 @@
-import '../assets/css/tailwind.css'
+import '@/assets/css/tailwind.css'
 // Top100.stories.js
 import Logo from './Logo.vue'
 

@@ -1,5 +1,11 @@
 {
+  "List": {
+    "description": "Auto imported from components/list/List.vue"
+  },
   "Logo": {
-    "description": "Auto imported from components/Logo.vue"
+    "description": "Auto imported from components/logo/Logo.vue"
+  },
+  "Nav": {
+    "description": "Auto imported from components/nav/Nav.vue"
   }
 }

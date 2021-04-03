@@ -1,4 +1,25 @@
+import { resolve } from 'path'
+
 export default {
+  alias: {
+    pages: resolve(__dirname, './pages'),
+    components: resolve(__dirname, './components'),
+    images: resolve(__dirname, './assets/images'),
+    css: resolve(__dirname, './assets/css'),
+    apollo: resolve(__dirname, './apollo/queries'),
+  },
+
+  publicRuntimeConfig: {
+    axios: {
+      browserBaseURL: process.env.BROWSER_BASE_URL,
+    },
+  },
+
+  privateRuntimeConfig: {
+    axios: {
+      baseURL: process.env.BASE_URL,
+    },
+  },
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -36,6 +57,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/apollo',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -60,6 +82,15 @@ export default {
   },
 
   storybook: {
-    stories: ['~/pages/**/*.stories.js'],
+    // stories: ['~/pages/**/*.stories.js'],
+  },
+
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint:
+          process.env.BACKEND_URL || 'http://localhost:1337/graphql',
+      },
+    },
   },
 }
